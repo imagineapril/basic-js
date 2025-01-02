@@ -18,7 +18,6 @@ const HALF_LIFE_PERIOD = 5730;
  *
  */
 function dateSample(sampleActivity) {
-  // throw new NotImplementedError('Not implemented');
   if (typeof sampleActivity === 'string' && Number(sampleActivity) > 0 && Number(sampleActivity) <= MODERN_ACTIVITY && isFinite(sampleActivity)) {
     return Math.ceil(Math.log(MODERN_ACTIVITY / sampleActivity) / (0.693 / HALF_LIFE_PERIOD));
   } else  {
