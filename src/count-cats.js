@@ -16,7 +16,7 @@ const { NotImplementedError } = require('../lib');
  */
 function countCats(matrix) {
   const cat = '^^';
-  return matrix.flat().filter(item === cat).length;
+  return matrix.flat().filter(item => item === cat).length;
 }
 
 module.exports = {
